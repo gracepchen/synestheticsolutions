@@ -47,6 +47,7 @@ a {
 
 body {
 	font-family: 'Roboto', sans-serif !important;
+	overflow-x: hidden;
 }
 
 img {
@@ -62,8 +63,8 @@ h2 {
 }
 
 .navbar {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 .navbar-brand {
