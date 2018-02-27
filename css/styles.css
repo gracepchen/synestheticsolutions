@@ -1,21 +1,44 @@
-.container-fluid {
-    padding-bottom: 8%;
+.promo {
+	-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+	clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 }
 
+.quote {
+	position: relative;
+	z-index: 1;
+	background-color: white;
+}
+
+.quote:before, .quote:after {
+	background: inherit;
+	content: '';
+	display: block;
+	height: 50%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	top: 0;
+		top: 0;
+	transform: skewY(-1.5deg);
+	transform-origin: 0 0;
+}
+
+
+
 .altStrip {
-    background-color: gray;
-    color: white;
+	background-color: gray;
+	color: white;
 }
 
 .altElement {
-    padding-top: 20%;
-    color: white;
-        border-bottom: 1px solid white; 
+	color: white;
+	border-bottom: 1px solid white; 
 }
 
 .title {
-    padding-top: 20%;
-        border-bottom: 1px solid black; 
+
+	border-bottom: 1px solid black; 
 }
 
 a {
@@ -23,105 +46,127 @@ a {
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 img {
-   display:block;
-    margin:auto;
+	display:block;
+	margin:auto;
 }
 
 h2 { 
-    width: 40%; 
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 180%;
+	width: 40%; 
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	font-size: 180%;
 }
 
 .navbar {
-    padding-top: 10px;
-     padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .navbar-brand {
-    padding-left: 5%;
+	padding-left: 5%;
 }
 
 .nav-item {
-    padding-right: 50px;
+	padding-right: 50px;
 }
 
-.btn-outline-dark:hover {
-color: white;
+.fade-in {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .5s linear;
+}
+
+.fade-out {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 1s, opacity .5s linear;
 }
 
 .jumbotron {
-    text-align: center;
-    color: white;
-    height: 500px;
-    background-image: url("https://pre00.deviantart.net/9025/th/pre/f/2012/244/c/0/grey_clouds__2_by_horses1999_stock-d5d66qj.jpg");
-    background-size: cover;
+	text-align: center;
+	color: white;
+	height: 500px;
+	background-image: url("https://pre00.deviantart.net/9025/th/pre/f/2012/244/c/0/grey_clouds__2_by_horses1999_stock-d5d66qj.jpg");
+	background-size: cover;
 }
 
 .display-4 {
-    margin-top: 8%;
+	margin-top: 8%;
 }
 
 .introduction {
-    text-align: center;
-    margin-top: 10%;
+	text-align: center;
+	margin-top: 10%;
 }
 
 #features,  #contact {
-    margin-top: 14%;
+	margin-top: 14%;
+}
+
+.feature, .about, .contact {
+	padding-bottom: 10%;
+	padding-top: 10%;
+}
+
+.meet {
+	padding-bottom: 10%;
 }
 
 .team {
-    text-align: center;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.team p {
+	margin-top: 5%;
 }
 
 #send {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 input::-webkit-input-placeholder {
-color: #aaa !important;
+	color: #aaa !important;
 }
- 
+
 input:-moz-placeholder { /* Firefox 18- */
-color: #aaa !important;  
+	color: #aaa !important;  
 }
- 
+
 input::-moz-placeholder {  /* Firefox 19+ */
-color: #aaa !important;  
+	color: #aaa !important;  
 }
- 
+
 input:-ms-input-placeholder {  
-color: #aaa !important;  
+	color: #aaa !important;  
 }
 
 textarea::-webkit-input-placeholder {
-color: #aaa !important;
+	color: #aaa !important;
 }
- 
+
 textarea:-moz-placeholder { /* Firefox 18- */
-color: #aaa !important;  
+	color: #aaa !important;  
 }
- 
+
 textarea::-moz-placeholder {  /* Firefox 19+ */
-color: #aaa !important;  
+	color: #aaa !important;  
 }
- 
+
 textarea:-ms-input-placeholder {  
-color: #aaa !important;  
+	color: #aaa !important;  
 }
 
 footer {
-    text-align: center;
-    background-color: gray;
-    color: white;
-    padding: 40px;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	padding: 40px;
 }
 

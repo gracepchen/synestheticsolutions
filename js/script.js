@@ -21,7 +21,7 @@ $(function() {
 
 $(function () {
   var lastScrollTop = 100;
-  var $navbar = $('.navbar');
+  var navbar = $('.navbar');
 
   $(window).scroll(function(event){
     var st = $(this).scrollTop();
@@ -29,26 +29,27 @@ $(function () {
     if (st > lastScrollTop) { // scroll down
       
       // use this is jQuery full is used
-      $navbar.fadeOut()
+     // navbar.fadeOut()
       
       // use this to use CSS3 animation
-      // $navbar.addClass("fade-out");
-      // $navbar.removeClass("fade-in");
+      navbar.addClass("fade-out");
+      navbar.removeClass("fade-in");
       
       // use this if no effect is required
-      // $navbar.hide();
+      // navbar.hide();
     } else { // scroll up
       
       // use this is jQuery full is used
-      $navbar.fadeIn()
+      //navbar.fadeIn()
       
       // use this to use CSS3 animation
-      // $navbar.addClass("fade-in");
-      // $navbar.removeClass("fade-out");
+      navbar.addClass("fade-in");
+      navbar.removeClass("fade-out");
       
       // use this if no effect is required
-      // $navbar.show();
+      // navbar.show();
     }
     lastScrollTop = st;
   });
 });
+
