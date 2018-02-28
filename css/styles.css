@@ -1,9 +1,20 @@
-.promo {
-	-webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+.both-angled {
+	-webkit-clip-path: polygon(0 13%, 1600px 0, 1600px 87%, 0 100%);
+	clip-path: polygon(0 13%, 1600px 0, 1600px 87%, 0 100%);
+}
+
+.bottom-angled {
+	webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 	clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 }
 
-.quote {
+.top-angled {
+	webkit-clip-path: polygon(0 13%, 1600px 0, 1600px 100%, 0 100%);
+	clip-path: polygon(0 13%, 1600px 0, 1600px 100%, 0 100%);
+}
+
+
+/*.quote {
 	position: relative;
 	z-index: 1;
 	background-color: white;
@@ -14,160 +25,184 @@
 	content: '';
 	display: block;
 	height: 50%;
+	bottom: 0;
 	left: 0;
 	position: absolute;
 	right: 0;
 	z-index: -1;
 	top: 0;
-		top: 0;
 	transform: skewY(-1.5deg);
 	transform-origin: 0 0;
-}
+	}*/
+
+	.altStrip {
+		/*background-color: gray;*/
+		color: white;
+		background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-76913.png");
+		background-attachment: fixed;
+	}
+
+	.altElement {
+		color: white;
+		border-bottom: 1px solid white; 
+	}
+
+	.title {
+		border-bottom: 1px solid black; 
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	body {
+		font-family: 'Lato', sans-serif !important;
+		overflow-x: hidden;
+	}
+
+	img {
+		display:block;
+		margin:auto;
+	}
+
+	h2 { 
+		width: 40%; 
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+		font-size: 180%;
+	}
 
 
 
-.altStrip {
-	background-color: gray;
-	color: white;
-}
+	.navbar {
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
 
-.altElement {
-	color: white;
-	border-bottom: 1px solid white; 
-}
+	.navbar-brand {
+		padding-left: 5%;
+	}
 
-.title {
+	.nav-item {
+		padding-right: 50px;
+	}
 
-	border-bottom: 1px solid black; 
-}
+	.fade-in {
+		visibility: visible;
+		opacity: 1;
+		transition: opacity .5s linear;
+	}
 
-a {
-	text-decoration: none;
-}
+	.fade-out {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s 1s, opacity .5s linear;
+	}
 
-body {
-	font-family: 'Roboto', sans-serif !important;
-	overflow-x: hidden;
-}
+	.jumbotron {
+		text-align: center;
+		color: white;
+		height: 100vh;
+		background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-76913.png");
+		background-size: cover;
+		background-attachment: fixed;
+	}
 
-img {
-	display:block;
-	margin:auto;
-}
+	.display-4 {
+		margin-top: 8%;
+		font-size: 650%;
+	}
 
-h2 { 
-	width: 40%; 
-	padding-bottom: 5px;
-	margin-bottom: 15px;
-	font-size: 180%;
-}
+	.introduction {
+		text-align: center;
+		margin-top: 10%;
+	}
 
-.navbar {
-	padding-top: 2%;
-	padding-bottom: 2%;
-}
+	#features, #contact {
+		margin-top: 10%;
+	}
 
-.navbar-brand {
-	padding-left: 5%;
-}
+	.feature, .about, .contact {
+		padding-bottom: 14%;
+		padding-top: 14%;
+	}
 
-.nav-item {
-	padding-right: 50px;
-}
+	.meet {
+		padding-bottom: 10%;
+		margin-top: 0;
+		padding-top: 0;
+	}
 
-.fade-in {
-	visibility: visible;
-	opacity: 1;
-	transition: opacity .5s linear;
-}
+	.team {
+		text-align: center;
+		margin-top: 2%;
+	}
 
-.fade-out {
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s 1s, opacity .5s linear;
-}
+	.team p {
+		margin-top: 5%;
+	}
 
-.jumbotron {
-	text-align: center;
-	color: white;
-	height: 500px;
-	background-image: url("https://pre00.deviantart.net/9025/th/pre/f/2012/244/c/0/grey_clouds__2_by_horses1999_stock-d5d66qj.jpg");
-	background-size: cover;
-}
+	#send {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-.display-4 {
-	margin-top: 8%;
-}
+	/* Color of placeholder */
+	input::-webkit-input-placeholder {
+		color: #aaa !important;
+	}
 
-.introduction {
-	text-align: center;
-	margin-top: 10%;
-}
+	input:-moz-placeholder { /* Firefox 18- */
+		color: #aaa !important;  
+	}
 
-#features,  #contact {
-	margin-top: 14%;
-}
+	input::-moz-placeholder {  /* Firefox 19+ */
+		color: #aaa !important;  
+	}
 
-.feature, .about, .contact {
-	padding-bottom: 10%;
-	padding-top: 10%;
-}
+	input:-ms-input-placeholder {  
+		color: #aaa !important;  
+	}
 
-.meet {
-	padding-bottom: 10%;
-}
+	textarea::-webkit-input-placeholder {
+		color: #aaa !important;
+	}
 
-.team {
-	text-align: center;
-	margin-top: 2%;
-}
+	textarea:-moz-placeholder { /* Firefox 18- */
+		color: #aaa !important;  
+	}
 
-.team p {
-	margin-top: 5%;
-}
+	textarea::-moz-placeholder {  /* Firefox 19+ */
+		color: #aaa !important;  
+	}
 
-#send {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+	textarea:-ms-input-placeholder {  
+		color: #aaa !important;  
+	}
 
-input::-webkit-input-placeholder {
-	color: #aaa !important;
-}
+	footer {
+		text-align: center;
+		background-color: black;
+		color: white;
+		padding: 40px;
+	}
 
-input:-moz-placeholder { /* Firefox 18- */
-	color: #aaa !important;  
-}
+	/* Media queries */
 
-input::-moz-placeholder {  /* Firefox 19+ */
-	color: #aaa !important;  
-}
-
-input:-ms-input-placeholder {  
-	color: #aaa !important;  
-}
-
-textarea::-webkit-input-placeholder {
-	color: #aaa !important;
-}
-
-textarea:-moz-placeholder { /* Firefox 18- */
-	color: #aaa !important;  
-}
-
-textarea::-moz-placeholder {  /* Firefox 19+ */
-	color: #aaa !important;  
-}
-
-textarea:-ms-input-placeholder {  
-	color: #aaa !important;  
-}
-
-footer {
-	text-align: center;
-	background-color: gray;
-	color: white;
-	padding: 40px;
-}
+	@media (max-width: 500px) {
+		img {
+			width: 30%;
+		}
+		.jumbotron {
+			height: 60vh;
+		}
+		.display-4 {
+			font-size: 200%;
+		}
+		.feature, .about, .contact {
+			padding-bottom: 34%;
+			padding-top: 54%;
+		}
+	}
 

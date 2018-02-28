@@ -1,3 +1,9 @@
+$(document).ready($('.navbar').hide());
+$(document).ready($('#splashLogo').hide());
+$(document).ready($('#splashLogo').fadeIn(2000));
+$(document).ready($('.lead').hide());
+$(document).ready($('.lead').fadeIn(5000));
+
 $(function() {
   // This will select everything with the class smoothScroll
   // This should prevent problems with carousel, scrollspy, etc...
@@ -20,7 +26,7 @@ $(function() {
 // Try 800 or below, it seems not too much but it will make a difference
 
 $(function () {
-  var lastScrollTop = 100;
+  var lastScrollTop = 500;
   var navbar = $('.navbar');
 
   $(window).scroll(function(event){
@@ -32,24 +38,29 @@ $(function () {
      // navbar.fadeOut()
       
       // use this to use CSS3 animation
-      navbar.addClass("fade-out");
-      navbar.removeClass("fade-in");
+      navbar.show();
+      navbar.addClass("fade-in");
+      navbar.removeClass("fade-out");
+      
       
       // use this if no effect is required
       // navbar.hide();
+    } else if (st < 30) {
+      navbar.hide();
     } else { // scroll up
       
       // use this is jQuery full is used
       //navbar.fadeIn()
       
       // use this to use CSS3 animation
-      navbar.addClass("fade-in");
-      navbar.removeClass("fade-out");
+      navbar.addClass("fade-out");
+      navbar.removeClass("fade-in");
       
       // use this if no effect is required
       // navbar.show();
+
     }
-    lastScrollTop = st;
+    // lastScrollTop = st;
   });
 });
 
