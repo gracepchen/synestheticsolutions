@@ -1,248 +1,272 @@
-		<!DOCTYPE html>
-		<html>
-		<head>
-			<title>Synthesthetic Solutions</title>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Synthesthetic Solutions</title>
 
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-			<link rel="stylesheet" type="text/css" href="css/styles.css">
-			<link href="https://fonts.googleapis.com/css?family=Roboto:300|Lato:300" rel="stylesheet">
-		</head>
-		<body>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300|Lato:300" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	</head>
+	<body>
 
-			<!-- Navbar -->
-			<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">
-				<img src="images/SS_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-			SYNESTHETIC SOLUTIONS</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+		<!-- Navbar -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand smoothScroll" href="#home">
+				<img src="images/SS_logo.png" width="30" height="30" class="d-inline-block align-top img-fluid" alt="">
+			Synesthetic Solutions</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
 
-						<li class="nav-item">
-							<a class="nav-link smoothScroll" href="#features">FEATURES</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link smoothScroll" href="#aboutUs">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<form class="form-inline smoothScroll" action="#contactUs">
-								<button class="btn btn-outline-dark" type="submit">CONTACT</button>
-							</form>
-						</li>
-					</ul>
+					<li class="nav-item">
+						<a class="nav-link smoothScroll" href="#features">Features</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link smoothScroll" href="#aboutUs">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link smoothScroll" href="#teamPics">Team</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link smoothScroll" href="#contactUs" id="contactButton">Contact</a>
+					</li>
+					<!-- <li class="nav-item">
+						<form class="form-inline smoothScroll" action="#contactUs">
+							<button class="btn btn-outline-dark" type="submit">Contact</button>
+						</form>
+					</li> -->
+				</ul>
 
-				</div>
-			</nav>
+			</div>
+		</nav>
 
-			<div class="jumbotron jumbotron-fluid bottom-angled">
-				<div class="container" id="splashLogo">
-					<img src="images/SS_logo_white.png" alt="Logo" class="pt-5" width="200vh">
-					<h1 class="display-4 mt-2">Sentio</h1>
-					<!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+		<div class="jumbotron jumbotron-fluid" id="home">
+			<div class="container" id="splashLogo">
+				<img src="images/SS_Logo_White.png" alt="Logo" class="pt-5 mt-5 img-fluid" width="250vh">
+				<h1 class="display-4 mt-2">Synesthetic Solutions</h1>
 
-					<p class="lead mt-5">
-						<a class="btn btn-light" href="#" role="button">PLAY VIDEO</a>
-					</p>
+		<section class="scroller" id="scrolldown">
+			<a href="#intro" class="smoothScroll"><span></span></a>
+		</section>
+
+
+				<!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+
+				<!-- <p class="lead mt-5">
+					<a class="btn btn-light" href="#" role="button">PLAY VIDEO</a>
+				</p> -->
+			</div>
+		</div>
+
+
+		<div class="row introduction" id="intro">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<!-- <img class="img-fluid" src="https://via.placeholder.com/350x150" alt="Intro Image CHANGE LATER" width="35%"> -->
+				<!-- <h1 class="underline mt-3">Sentio</h1> -->
+				<h3 class="mt-3">Welcome to the cane of the future.</h3>
+				<p>Sentio is the smart cane of tomorrow.&nbsp; Built for everyone.&nbsp; Suited to you. Change tagline here.</p>
+				<div class="video-container d-flex justify-content-center">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/HeYlRiJlRhg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
+			<div class="col-sm-1"></div>
+		</div>
+
+		<!-- replace with JSON later -->
+		<div class="container-fluid altStrip both-angled">
+			<div class="row feature" id="features">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<h2 class="altElement">Feature 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem.
+					</p>
+				</div>
+
+				<div class="col-sm-5">
+					<img class="img-fluid" src="https://vignette.wikia.nocookie.net/clubpenguin/images/7/7b/Gold_Cane.png/revision/latest?cb=20140323201638" width="60%">
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+
+		<div class="container-fluid my-0 py-0">
+			<div class="row feature">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<img class="img-fluid" src="http://theunrealuniverse.com/img/grb-small.gif" width="60%">
+				</div>
+				<div class="col-sm-5">
+					<h2 class="title">Feature 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem. 
+					</p>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+
+		<div class="container-fluid altStrip both-angled">
+			<div class="row feature">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<h2 class="altElement">Feature 3</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem. 
+					</p>
+				</div>
+
+				<div class="col-sm-5">
+					<!-- <img class="img-fluid altElement" src="http://chestnutglobalpartners.in/wp-content/uploads/2017/06/placeholder.png" width="40%"> -->
+					<img class="img-fluid" src="https://img00.deviantart.net/aa2b/i/2013/033/5/5/png_water_by_moonglowlilly-d5tmikh.png" width="80%">
+					
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
 
 
-			<!-- Content here -->
 
-			<div class="row introduction">
+		<!-- ABOUT -->
+		<div class="container-fluid">
+			<div class="row about" id="aboutUs">
 				<div class="col-sm-1"></div>
 				<div class="col-sm-10">
-					<img class="img-fluid" src="https://via.placeholder.com/350x150" alt="Intro Image CHANGE LATER" width="35%">
-					<h3 class="mt-3">Welcome to the future.</h3>
-						<p>Sentio is the smart cane of tomorrow. Built for everyone. Suited to you. Change tagline here.</p>
-					</div>
-					<div class="col-sm-1"></div>
+					<h2 class="title">About Us</h2>
 				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<p><b>WHO WE ARE</b> &nbsp &nbsp Synesthetic Solutions originated as a student team of engineers from the University of California, San Diego, in 2017. After joining the Basement, a startup incubator, we received the funding to start developing Sentio in earnest. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. 
+					</p>
+				</div>
+				<div class="col-sm-5">
 
-				<!-- replace with JSON later -->
-				<div class="container-fluid altStrip both-angled">
-					<div class="row feature" id="features">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-5">
-							<h2 class="altElement">Feature 1</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem. Duis malesuada erat ex, vitae pellentesque elit sodales eu.
-							</p>
-						</div>
+					<p><b>OUR MISSION</b> &nbsp &nbsp We strive to bring the best affordable accessible wear to the public. Let's design an accessible world, together. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. 
+					</p>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
 
-						<div class="col-sm-5">
-							<img class="img-fluid altElement" src="http://chestnutglobalpartners.in/wp-content/uploads/2017/06/placeholder.png" width="40%">
+			<div class="row meet">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h2 class="title" id="teamPics">Meet the Team</h2>
+					<div class="row"> 
+						<!-- replace with JSON later -->
+						<div class="col-sm-4 team">
+							<img class="img-fluid rounded-circle" src="images/sam.jpeg">
+							<p><b>Samuel Merill-Palethorpe</b> <br>Co-Founder, Electrical Engineer</p>
+							<a href="https://www.linkedin.com/in/samuel-merrill-palethorpe-b2722b153"><i class="fab fa-linkedin fa-lg"></i></a>
 						</div>
-						<div class="col-sm-1"></div>
+						<div class="col-sm-4 team">
+							<img class="img-fluid rounded-circle" src="images/david.jpeg">
+							<p><b>David Markov</b><br>Co-Founder, Aerospace Engineer</p>
+							<a href="https://www.linkedin.com/in/david-markov"><i class="fab fa-linkedin fa-lg"></i></a>
+						</div>
+						<div class="col-sm-4 team">
+							<img class="img-fluid rounded-circle" src="images/gaurav.jpg">
+							<p><b>Gaurav Parmar</b><br>Co-Founder, Software Engineer</p>
+							<a href="https://www.linkedin.com/in/parmargaurav"><i class="fab fa-linkedin fa-lg"></i></a>
+						</div><br><br><br><br>
+						<div class="col-sm-4 team">
+							<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
+							<p><b>Firstname Lastname</b> <br>Software Developer Intern</p>
+							<a href="https://www.linkedin.com/in/parmargaurav"><i class="fab fa-linkedin fa-lg"></i></a>
+						</div>
+						<div class="col-sm-4 team">
+							<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
+							<p><b>Firstname Lastname</b> <br>Marketing Intern</p>
+							<a href="https://www.linkedin.com/in/parmargaurav"><i class="fab fa-linkedin fa-lg"></i></a>
+						</div>
+						<div class="col-sm-4 team">
+							<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
+							<p><b>Firstname Lastname</b> <br>Web Development Intern</p>
+							<a href="https://www.linkedin.com/in/parmargaurav"><i class="fab fa-linkedin fa-lg"></i></a>
+						</div>
 					</div>
 				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
 
-				<div class="container-fluid both-angled my-0 py-0">
-					<div class="row feature">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-5">
-							<img class="img-fluid altElement" src="http://chestnutglobalpartners.in/wp-content/uploads/2017/06/placeholder.png" width="40%">
-						</div>
-						<div class="col-sm-5">
-							<h2 class="title">Feature 2</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem. Duis malesuada erat ex, vitae pellentesque elit sodales eu.
-							</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-				</div>
-
-				<div class="container-fluid altStrip both-angled">
-					<div class="row feature">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-5">
-							<h2 class="altElement">Feature 3</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem. Duis malesuada erat ex, vitae pellentesque elit sodales eu.
-							</p>
-						</div>
-
-						<div class="col-sm-5">
-							<img class="img-fluid altElement" src="http://chestnutglobalpartners.in/wp-content/uploads/2017/06/placeholder.png" width="40%">
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-				</div>
-
-
-
-				<!-- ABOUT -->
-				<div class="container-fluid both-angled">
-					<div class="row about" id="aboutUs">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10">
-							<h2>ADD SPECS SECTION HERE?</h2>
-							<h2 class="title">About Us</h2>
-						</div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-1"></div>
-						<div class="col-sm-5">
-							<p><b>WHO WE ARE</b> &nbsp &nbsp Synesthetic Solutions originated as a student team of engineers from the University of California, San Diego, in 2017. After joining the Basement, a startup incubator, we started developing etc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem. Duis malesuada erat ex, vitae pellentesque elit sodales eu.
-							</p>
-						</div>
-						<div class="col-sm-5">
-
-							<p><b>OUR MISSION</b> &nbsp &nbsp We strive to bring the best accessible wear to the public. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum fringilla ex id lobortis. Etiam egestas, mi tincidunt interdum malesuada, tellus metus bibendum elit, viverra dapibus nunc purus eget mauris. Cras eleifend luctus magna vel dictum. Maecenas eu semper orci, nec cursus nulla. Nulla molestie lectus et lorem venenatis, et consectetur magna semper. Ut quis lacinia mi. Maecenas sit amet quam lorem. Duis malesuada erat ex, vitae pellentesque elit sodales eu.
-							</p>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
-
-					<div class="row meet">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10">
-							<h2 class="title">Meet the Team</h2>
-							<div class="row"> 
-								<!-- replace with JSON later -->
-								<div class="col-sm-4 team">
-									<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
-									<p><b>Samuel Merill-Palethorpe</b> <br>Co-Founder, Electrical Engineer</p>
-								</div>
-								<div class="col-sm-4 team">
-									<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
-									<p><b>David Markov</b><br>Co-Founder, Aerospace Engineer</p>
-								</div>
-								<div class="col-sm-4 team">
-									<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
-									<p><b>Gaurav Parmar</b><br>Co-Founder, Software Developer</p>
-								</div><br><br><br><br>
-								<div class="col-sm-4 team">
-									<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
-									<p><b>Firstname Lastname</b> <br>Software Developer Intern</p>
-								</div>
-								<div class="col-sm-4 team">
-									<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
-									<p><b>Firstname Lastname</b> <br>Marketing Intern</p>
-								</div>
-								<div class="col-sm-4 team">
-									<img class="img-fluid rounded-circle" src="http://wishesngifts.com/image/cache/catalog/demo/neon/products/600x600-200x200.gif">
-									<p><b>Firstname Lastname</b> <br>Web Development Intern</p>
-								</div>
+		<div class="container-fluid altStrip top-angled">
+			<div class="row contact" id="contactUs">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<h2 class="altElement mt-5">Let's Talk.</h2>
+					<form>
+						<div class="form-group row">
+							<div class="col-sm-3"></div>
+							<label for="inputName" class="col-sm-1 col-form-label">Name:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" placeholder="John Doe">
 							</div>
+							<div class="col-sm-3"></div>
 						</div>
-						<div class="col-sm-1"></div>
-					</div>
+
+						<div class="form-group row">
+							<div class="col-sm-3"></div>
+							<label for="inputEmail" class="col-sm-1 col-form-label">Email:</label>
+							<div class="col-sm-5">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="johndoe@email.com">
+							</div>
+							<div class="col-sm-3"></div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-sm-3"></div>
+							<label for="inputSubject" class="col-sm-1 col-form-label">Subject:</label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" id="inputSubject" placeholder="Tell me more about Sentio!">
+							</div>
+							<div class="col-sm-3"></div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-sm-3"></div>
+							<label for="inputSubject" class="col-sm-1 col-form-label">Message:</label>
+							<div class="col-sm-5">
+								<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="What can we help you with?"></textarea>
+							</div>
+							<div class="col-sm-3"></div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-sm-3"></div>
+							<div class="col-sm-6" id="send">
+								<button class="btn btn-dark send" type="button">Send Message</button>
+							</div>
+							<div class="col-sm-3"></div>
+						</div>
+					</form>
 				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
 
-				<div class="container-fluid altStrip top-angled">
-					<div class="row contact" id="contactUs">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10">
-							<h2 class="altElement mt-5">Let's Talk.</h2>
-							<form>
-								<div class="form-group row">
-									<div class="col-sm-3"></div>
-									<label for="inputName" class="col-sm-1 col-form-label">Name:</label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" placeholder="John Doe">
-									</div>
-									<div class="col-sm-3"></div>
-								</div>
 
-								<div class="form-group row">
-									<div class="col-sm-3"></div>
-									<label for="inputEmail" class="col-sm-1 col-form-label">Email:</label>
-									<div class="col-sm-5">
-										<input type="email" class="form-control" id="inputEmail3" placeholder="johndoe@email.com">
-									</div>
-									<div class="col-sm-3"></div>
-								</div>
-
-								<div class="form-group row">
-									<div class="col-sm-3"></div>
-									<label for="inputSubject" class="col-sm-1 col-form-label">Subject:</label>
-									<div class="col-sm-5">
-										<input type="text" class="form-control" id="inputSubject" placeholder="Tell me more about Sentio!">
-									</div>
-									<div class="col-sm-3"></div>
-								</div>
-
-								<div class="form-group row">
-									<div class="col-sm-3"></div>
-									<label for="inputSubject" class="col-sm-1 col-form-label">Message:</label>
-									<div class="col-sm-5">
-										<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="What can we help you with?"></textarea>
-									</div>
-									<div class="col-sm-3"></div>
-								</div>
-
-								<div class="form-group row">
-									<div class="col-sm-3"></div>
-									<div class="col-sm-6" id="send">
-										<button class="btn btn-dark send" type="button">Send Message</button>
-									</div>
-									<div class="col-sm-3"></div>
-								</div>
-							</form>
-						</div>
-						<div class="col-sm-1"></div>
-					</div>
+		<footer>
+			<div class="row">
+				<div class="col-sm-12">
+					© 2018 Copyright: Synesthetic Solutions<br>
+					
+					<p>Add emailing list?</p><br>
+					<i class="fab fa-facebook fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-linkedin fa-2x"></i>
 				</div>
+			</div>
+		</footer>
 
-
-				<footer>
-					<div class="row">
-						<div class="col-sm-12">
-							© 2018 Copyright: Synesthetic Solutions
-							<p>Add emailing list?</p>
-						</div>
-					</div>
-				</footer>
-
-				<!-- JS -->
-				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-				<script src="js/script.js"></script>
-			</body>
-			</html>
+		<!-- JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+	</body>
+	</html>
 

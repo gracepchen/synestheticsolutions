@@ -1,3 +1,30 @@
+/* HTML ELEMENTS */
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Lato', sans-serif !important;
+	overflow-x: hidden;
+}
+
+img {
+	display:block;
+	margin:auto;
+}
+
+h2 { 
+	width: 40%; 
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	font-size: 200%;
+}
+
+p {
+	font-size: 110%;
+}
+
+/* VISUAL EFFECTS */
 .both-angled {
 	-webkit-clip-path: polygon(0 13%, 1600px 0, 1600px 87%, 0 100%);
 	clip-path: polygon(0 13%, 1600px 0, 1600px 87%, 0 100%);
@@ -11,6 +38,232 @@
 .top-angled {
 	webkit-clip-path: polygon(0 13%, 1600px 0, 1600px 100%, 0 100%);
 	clip-path: polygon(0 13%, 1600px 0, 1600px 100%, 0 100%);
+}
+
+.fade-in {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .5s linear;
+}
+
+.fade-out {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 1s, opacity .5s linear;
+}
+
+.underline {
+	border-bottom: 1px solid #444;
+	padding-bottom: 5px;
+}
+
+/* NAVBAR */
+.navbar {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.navbar-brand {
+	padding-left: 5%;
+}
+
+.nav-item {
+	padding-right: 45px;
+	/*text-transform: uppercase;*/
+}
+
+ul a:hover {
+	position: relative; 
+	top: -1px;
+	font-weight: bold;
+}
+
+#contactButton {
+	border: 1px solid #333;
+	border-radius: 5px;
+	color: #333;
+}
+
+/* SPLASH PAGE */
+
+.jumbotron {
+	text-align: center;
+	color: white;
+	height: 100vh;
+	background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-76913.png");
+	/*background-image: url("../images/bg.jpg");*/
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.display-4 {
+	margin-top: 8%;
+	font-size: 450%;
+}
+
+#scrolldown a {
+	padding-top: 60px;
+}
+
+#scrolldown a span {
+	position: absolute;
+	top: 90vh;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+
+/* INTRODUCTION */
+
+.introduction {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:46.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/* FEATURES & ABOUT*/
+.altStrip {
+	color: white;
+	background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-76913.png");
+	/*background-image: url("../images/bg.jpg");*/
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.altStrip p {
+	background: rgba(150,150,150, .75);
+	padding: 5%;
+}
+
+.altElement {
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+.title {
+	border-bottom: 1px solid black; 
+}
+
+#features, #contact {
+	margin-top: 10%;
+}
+
+.feature, .about, .contact {
+	padding-bottom: 14%;
+	padding-top: 14%;
+}
+
+/* TEAM STYLING */
+
+.meet {
+	padding-bottom: 10%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.team {
+	text-align: center;
+	margin-top: 2%;
+}
+
+.team p {
+	margin-top: 5%;
+}
+
+.team img {
+	width: 200px;
+}
+
+/* CONTACT FORM */
+
+#send {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Color of placeholder */
+input::-webkit-input-placeholder {
+	color: #aaa !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+	color: #aaa !important;  
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+	color: #aaa !important;  
+}
+
+input:-ms-input-placeholder {  
+	color: #aaa !important;  
+}
+
+textarea::-webkit-input-placeholder {
+	color: #aaa !important;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+	color: #aaa !important;  
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+	color: #aaa !important;  
+}
+
+textarea:-ms-input-placeholder {  
+	color: #aaa !important;  
+}
+
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 40px;
+}
+
+
+
+
+/* Media queries */
+@media (max-width: 500px) {
+	img {
+		width: 30%;
+	}
+	.jumbotron {
+		height: 60vh;
+	}
+	.display-4 {
+		font-size: 200%;
+	}
+	.feature, .about, .contact {
+		padding-bottom: 34%;
+		padding-top: 54%;
+	}
 }
 
 
@@ -34,175 +287,3 @@
 	transform: skewY(-1.5deg);
 	transform-origin: 0 0;
 	}*/
-
-	.altStrip {
-		/*background-color: gray;*/
-		color: white;
-		background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-76913.png");
-		background-attachment: fixed;
-	}
-
-	.altElement {
-		color: white;
-		border-bottom: 1px solid white; 
-	}
-
-	.title {
-		border-bottom: 1px solid black; 
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	body {
-		font-family: 'Lato', sans-serif !important;
-		overflow-x: hidden;
-	}
-
-	img {
-		display:block;
-		margin:auto;
-	}
-
-	h2 { 
-		width: 40%; 
-		padding-bottom: 5px;
-		margin-bottom: 15px;
-		font-size: 180%;
-	}
-
-
-
-	.navbar {
-		padding-top: 1%;
-		padding-bottom: 1%;
-	}
-
-	.navbar-brand {
-		padding-left: 5%;
-	}
-
-	.nav-item {
-		padding-right: 50px;
-	}
-
-	.fade-in {
-		visibility: visible;
-		opacity: 1;
-		transition: opacity .5s linear;
-	}
-
-	.fade-out {
-		visibility: hidden;
-		opacity: 0;
-		transition: visibility 0s 1s, opacity .5s linear;
-	}
-
-	.jumbotron {
-		text-align: center;
-		color: white;
-		height: 100vh;
-		background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-76913.png");
-		background-size: cover;
-		background-attachment: fixed;
-	}
-
-	.display-4 {
-		margin-top: 8%;
-		font-size: 650%;
-	}
-
-	.introduction {
-		text-align: center;
-		margin-top: 10%;
-	}
-
-	#features, #contact {
-		margin-top: 10%;
-	}
-
-	.feature, .about, .contact {
-		padding-bottom: 14%;
-		padding-top: 14%;
-	}
-
-	.meet {
-		padding-bottom: 10%;
-		margin-top: 0;
-		padding-top: 0;
-	}
-
-	.team {
-		text-align: center;
-		margin-top: 2%;
-	}
-
-	.team p {
-		margin-top: 5%;
-	}
-
-	#send {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	/* Color of placeholder */
-	input::-webkit-input-placeholder {
-		color: #aaa !important;
-	}
-
-	input:-moz-placeholder { /* Firefox 18- */
-		color: #aaa !important;  
-	}
-
-	input::-moz-placeholder {  /* Firefox 19+ */
-		color: #aaa !important;  
-	}
-
-	input:-ms-input-placeholder {  
-		color: #aaa !important;  
-	}
-
-	textarea::-webkit-input-placeholder {
-		color: #aaa !important;
-	}
-
-	textarea:-moz-placeholder { /* Firefox 18- */
-		color: #aaa !important;  
-	}
-
-	textarea::-moz-placeholder {  /* Firefox 19+ */
-		color: #aaa !important;  
-	}
-
-	textarea:-ms-input-placeholder {  
-		color: #aaa !important;  
-	}
-
-	footer {
-		text-align: center;
-		background-color: black;
-		color: white;
-		padding: 40px;
-	}
-
-	/* Media queries */
-
-	@media (max-width: 500px) {
-		img {
-			width: 30%;
-		}
-		.jumbotron {
-			height: 60vh;
-		}
-		.display-4 {
-			font-size: 200%;
-		}
-		.feature, .about, .contact {
-			padding-bottom: 34%;
-			padding-top: 54%;
-		}
-	}
-

@@ -1,8 +1,10 @@
-$(document).ready($('.navbar').hide());
-$(document).ready($('#splashLogo').hide());
-$(document).ready($('#splashLogo').fadeIn(2000));
-$(document).ready($('.lead').hide());
-$(document).ready($('.lead').fadeIn(5000));
+$(document).ready(function() {
+  $('.navbar').hide();
+  $('#splashLogo').hide();
+  $('#splashLogo').fadeIn(2000);
+  $('.scroller').hide();
+  $('.scroller').fadeIn(3000);
+});
 
 $(function() {
   // This will select everything with the class smoothScroll
@@ -25,18 +27,20 @@ $(function() {
 // Personally i think 1000 is too much
 // Try 800 or below, it seems not too much but it will make a difference
 
+
+// Navigation bar transitions
 $(function () {
-  var lastScrollTop = 500;
+  var lastScrollTop = 400;
   var navbar = $('.navbar');
 
   $(window).scroll(function(event){
     var st = $(this).scrollTop();
 
     if (st > lastScrollTop) { // scroll down
-      
+
       // use this is jQuery full is used
      // navbar.fadeOut()
-      
+
       // use this to use CSS3 animation
       navbar.show();
       navbar.addClass("fade-in");
@@ -48,7 +52,7 @@ $(function () {
     } else if (st < 30) {
       navbar.hide();
     } else { // scroll up
-      
+
       // use this is jQuery full is used
       //navbar.fadeIn()
       
@@ -63,4 +67,42 @@ $(function () {
     // lastScrollTop = st;
   });
 });
+
+
+$(function() {
+  $('.scroller').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $('.introduction').offset().top}, 600, 'linear');
+  });
+});
+
+// $(document).ready(function() {
+
+//   //hide feature elements 
+//   $(".feature h2").hide();
+//   $(".feature p").hide();
+//   $(".feature img").hide();
+
+//   //init scrolling event heandler
+//   $(document).scroll(function(){
+
+//     var docScroll = $(document).scrollTop(), 
+//     feature = $(".feature").offset().top - 70;
+    
+//     //when reach top of feature, trigger animation
+//     if(docScroll >= feature ) {
+//       //$('.feature p').toggle("slide", {direction: "right"}, 1000);
+//       $(".feature h2").fadeIn(300);
+//       $(".feature p").fadeIn(400);
+//       $(".feature img").fadeIn(500);
+//       //alert(feature);
+//       //$("#first").fadeIn(200);
+//     } else {
+//       $(".feature h2").fadeOut(500);
+//       $(".feature p").fadeOut(500);
+//       $(".feature img").fadeOut(500);
+//      // $("#first").fadeOut(200);
+//    }
+//  })   
+// });
 
